@@ -15,6 +15,12 @@
 				<mat-option value="option1">Option 1</mat-option>
 				<mat-option value="option2">Option 2</mat-option>
 				<mat-option value="option3">Option 3</mat-option>
+				<mat-option value="option3">Option 4</mat-option>
+				<mat-option value="option3">Option 5</mat-option>
+				<mat-option value="option3">Option 6</mat-option>
+				<mat-option value="option3">Option 7</mat-option>
+				<mat-option value="option3">Option 8</mat-option>
+				<mat-option value="option3">Option 9</mat-option>
 			</mat-select>
 		</mat-form-field>
 		<mat-form-field>
@@ -23,6 +29,12 @@
 				<mat-option value="option1">Multiple Option 1</mat-option>
 				<mat-option value="option2">Multiple Option 2</mat-option>
 				<mat-option value="option3">Multiple Option 3</mat-option>
+				<mat-option value="option1">Multiple Option 4</mat-option>
+				<mat-option value="option2">Multiple Option 5</mat-option>
+				<mat-option value="option3">Multiple Option 6</mat-option>
+				<mat-option value="option1">Multiple Option 7</mat-option>
+				<mat-option value="option2">Multiple Option 8</mat-option>
+				<mat-option value="option3">Multiple Option 9</mat-option>
 			</mat-select>
 		</mat-form-field>
 	</section>
@@ -38,6 +50,31 @@
 	</section>
 	<section class="example-section">
 		<mat-slider thumbLabel tickInterval="1"></mat-slider>
+	</section>
+	<section class="example-section">
+		<mat-form-field class="example-full-width">
+			<input matInput id="angularTextField" placeholder="Text field" value="some text">
+		</mat-form-field>
+
+		<mat-form-field class="example-full-width">
+			<textarea matInput id="angularTextArea" placeholder="Leave a comment"></textarea>
+		</mat-form-field>
+		<mat-form-field class="example-full-width">
+			<input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+			<mat-autocomplete #auto="matAutocomplete">
+				<mat-option *ngFor="let option of options" [value]="option">
+					{{option}}
+				</mat-option>
+			</mat-autocomplete>
+		</mat-form-field>
+	</section>
+	<section class="example-section">
+		<mat-form-field>
+			<input matInput [matDatepicker]="picker" placeholder="Choose a date" [formControl]="date">
+			<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+			<mat-datepicker #picker startView="month" [startAt]="startDate"></mat-datepicker>
+		</mat-form-field>
+
 	</section>
 
 </div>
