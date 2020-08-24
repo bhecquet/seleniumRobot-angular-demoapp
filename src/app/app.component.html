@@ -6,6 +6,8 @@
     Welcome to {{ title }}!
   </h1>
 </div>
+
+<h2>Angular material</h2>
 <div class="example-container">
 	
 	<section class="example-section">
@@ -77,6 +79,35 @@
 
 	</section>
 
+</div>
+
+<h2>ng-select</h2>
+<div class="example-container">
+	<section class="example-section">
+		<ng-select id="ngSelect"
+		   [items]="items"
+		   bindLabel="name"
+		   placeholder="Select item"
+		   appendTo="body"
+		   [multiple]="false"
+		   >
+		</ng-select>
+		
+		<ng-select id=ngMultipleSelect 
+		   [items]="items"
+		   bindLabel="name"
+		   placeholder="Select item"
+		   appendTo="body"
+		   [multiple]="true"
+			[closeOnSelect]="false"
+		   [(ngModel)]="selected">
+		   <ng-template ng-option-tmp let-item="item">
+			<input [checked]="selected.indexOf(item) > -1" type="checkbox">
+			{{item.name}}
+		  </ng-template>
+		   
+		</ng-select>
+	</section>
 </div>
 
 

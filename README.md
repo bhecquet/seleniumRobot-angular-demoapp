@@ -1,17 +1,6 @@
-# Testapp
+# SeleniumRobotAngularDemoapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
-Application aims at being used inside seleniumRobot integration tests to check that specific angular material elements can be used
-
-## Install
-
-clone project
-
-- install node (>= 6.11.5) + npm ( >= 3.10.10)
-- install angular-cli (1.5.0 for angular 5) [https://cli.angular.io/](https://cli.angular.io/): `npm install -g @angular/cli@1.5.0`
-- `cd <dir_where_app_is_cloned>`
-- install dependencies: `npm install`: this will read packages.json and fetch the required dependencies
-- go to `src/app/` and modify html. Doc for material components can be found here [https://material.angular.io/components/categories](https://material.angular.io/components/categories)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server
 
@@ -23,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Build the updated application with `ng build --prod --output-hashing=none --output-path=angularApp --base-href=.`
 
 ## Running unit tests
 

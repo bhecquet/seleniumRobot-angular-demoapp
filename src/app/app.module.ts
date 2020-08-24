@@ -7,14 +7,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
 import { ReactiveFormsModule } from '@angular/forms';
-import { 
-	MatAutocompleteModule,
-	MatDatepickerModule,
-	MatNativeDateModule
- } from '@angular/material';
-
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatDatepickerModule } from '@angular/material/datepicker'; 
+import { NgSelectModule } from '@ng-select/ng-select';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-
 
 @NgModule({
   declarations: [
@@ -31,7 +29,9 @@ import { AppComponent } from './app.component';
 	ReactiveFormsModule,
 	MatAutocompleteModule,
 	MatDatepickerModule,
-	MatNativeDateModule
+	MatNativeDateModule,
+    FormsModule,
+	NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
