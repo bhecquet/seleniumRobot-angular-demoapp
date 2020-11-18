@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 clone project
 
 - install node (>= 6.11.5) + npm ( >= 3.10.10)
-- install angular-cli (1.5.0 for angular 5) [https://cli.angular.io/](https://cli.angular.io/): `npm install -g @angular/cli@1.5.0`
+- install angular-cli (9.11.1 for angular 9) [https://cli.angular.io/](https://cli.angular.io/): `npm install -g @angular/cli@9.11.1`
 - `cd <dir_where_app_is_cloned>`
 - install dependencies: `npm install`: this will read packages.json and fetch the required dependencies
 - go to `src/app/` and modify html. Doc for material components can be found here [https://material.angular.io/components/categories](https://material.angular.io/components/categories)
